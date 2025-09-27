@@ -1,0 +1,4 @@
+box-ai-agents-toolkit>=0.0.50
+fastapi>=0.116.2
+mcp[cli]>=1.14.0
+python-dotenv>=1.1.1
