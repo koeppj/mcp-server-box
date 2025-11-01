@@ -14,7 +14,7 @@ WORKDIR /app
 
 # App code
 # Ensure your script filename matches here
-COPY src/* /app/.
+COPY src/ /app/
 COPY requirements.txt requirements.txt
 
 # Install Python deps
@@ -28,4 +28,4 @@ USER app
 # - BOX_CLIENT_SECRET=your_client_secret
 # - BOX_SUBJECT_TYPE = user # or enterprise
 # - BOX_SUBJECT_ID = your user id or enterprise id
-ENTRYPOINT ["python", "/app/mcp_server_box.py", "--auth", "ccg","--transport", "http"]
+ENTRYPOINT ["python", "/app/mcp_server_box.py", "--box-auth", "ccg","--transport", "streamable-http"]
