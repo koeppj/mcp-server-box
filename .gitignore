@@ -5,6 +5,7 @@ build/
 dist/
 wheels/
 *.egg-info
+htmlcov/
 
 # Virtual environments
 .venv
@@ -13,8 +14,11 @@ wheels/
 .env*
 .auth.*
 .oauth-*
+.jwt*
 
 # Garbage
 .DS_Store
 
 .coverage
+
+.oauth*
